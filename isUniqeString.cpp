@@ -1,3 +1,8 @@
+/*
+Check if a string that contains only lowercase a-z letters has no repetitive letters
+will check with bit manipulation
+*/
+
 int main()
 {
 	string str = "adbrvythv";
@@ -9,7 +14,8 @@ int main()
 
 bool isUnique(string str)
 {
-	int mask = 0, num, isDup;
+	int mask = 0; // int - 32 bit is enough
+	int num, isDup;
 	int len = str.length();
 
 	for (int i = 0; i < len; i++)
