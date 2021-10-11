@@ -1,5 +1,5 @@
 /*
-Check if a string that contains only lowercase a-z letters has no repetitive letters
+1.1 Check if a string that contains only lowercase a-z letters has no repetitive letters
 will check with bit manipulation
 */
 
