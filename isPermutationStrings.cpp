@@ -5,7 +5,7 @@ using namespace std;
 /*
 Given two strings, write a method to decide if one is a permutation of the
 other.
-with space- hash \ bucket
+with space- hash \ bucket (128 -ASCII)
 without space- mergesort \ bubble
 I will use hash -> multi-set.
 */
