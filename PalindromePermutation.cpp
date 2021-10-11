@@ -3,7 +3,7 @@
 using namespace std;
 
 /*
-Palindrome Permutation: Given a string, write a function to check if it is a permutation of
+1.4 Palindrome Permutation: Given a string, write a function to check if it is a permutation of
 a palindrome.
 EXAMPLE
 Input: Tact Coa
