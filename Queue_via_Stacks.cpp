@@ -17,7 +17,7 @@ protected:
 	stack<int> s2;
 
 public:
-	void pop() {
+	void dequeue() {
 
 		if (s2.size() > 0) {
 			s2.pop();
@@ -35,7 +35,7 @@ public:
 		}
 	}
 
-	void top()
+	void peek()
 	{
 		if (s2.size() > 0) {
 			cout<< s2.top();
@@ -53,7 +53,7 @@ public:
 		}
 	}
 
-	void push(int data)
+	void enqueue(int data)
 	{
 		s1.push(data);
 	}
