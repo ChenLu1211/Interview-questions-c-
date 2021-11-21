@@ -7,7 +7,7 @@ using namespace std;
 
 
 /*
-Store all subsequences of string
+Store all Subsequences of string
 example:
 input: "abc"
 output: "a", "b", "c", "ab", "bc", "ac", "abc"
@@ -26,8 +26,9 @@ int main() {
     string in;
     cin >> in;
     string out = "";
-
-    print_subs(in, out);
+    
+    vector<string> v;
+    print_subs(in, out, v);
     cout << endl;
 
     print_subs2(input, output, 0);
@@ -36,14 +37,15 @@ int main() {
 }
 
 
-void print_subs(string input, string output) {
-    if (input.length() == 0) {
-        cout << output << endl;
+void print_subs(string input, string output, vector<string> &v){
+    if(input.length() == 0){
+        v.push_back(output);
         return;
     }
-    print_subs(input.substr(1), output + input[0]);  /// include
-    print_subs(input.substr(1), output);   /// exclude
+    print_subs(input.substr(1), output + input[0],v);  /// include
+    print_subs(input.substr(1), output,v);   /// exclude
 }
+
 
 void print_subs2(char input[], char output[], int i) {
     if (input[0] == '\0') {
